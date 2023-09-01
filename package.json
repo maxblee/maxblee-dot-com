@@ -10,7 +10,7 @@
 		"astro": "astro",
 		"format:fix": "prettier . --write",
 		"format:check": "prettier . --check",
-		"lint": "eslint .",
+		"lint": "eslint . && npm run lint:css",
 		"lint:css": "stylelint **/*.{css,astro,svelte}",
 		"lint:fix": "eslint . --fix",
 		"staged:fix": "lint-staged",
