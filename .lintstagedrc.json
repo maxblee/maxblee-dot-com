@@ -1,0 +1,4 @@
+{
+	"*": "prettier . --write",
+	"*.{astro,ts,js,cjs,svelte,mjs}": "eslint . --write"
+}
