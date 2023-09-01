@@ -1,0 +1,32 @@
+{
+  "plugins": [
+    "prettier-plugin-astro",
+    "prettier-plugin-svelte",
+    "@ianvs/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss"
+  ],
+  "importOrder": [
+    "<BUILTIN_MODULES>",
+    "",
+    "^svelte$",
+    "^svelte/(.*)$",
+    "",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^@",
+    "",
+    "<TYPES>"
+  ],
+  "importOrderTypeScriptVersion": "5.2.0",
+  "tailwindFunctions": ["clsx"],
+  "overrides": [
+    {
+      "files": "*.svelte",
+      "options": { "parser": "svelte" }
+    },
+    {
+      "files": "*.astro",
+      "options": { "parser": "astro" }
+    }
+  ]
+}
