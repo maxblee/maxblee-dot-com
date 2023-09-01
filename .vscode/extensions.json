@@ -5,7 +5,8 @@
 		"dbaeumer.vscode-eslint",
 		"esbenp.prettier-vscode",
 		"yoavbls.pretty-ts-errors",
-		"svelte.svelte-vscode"
+		"svelte.svelte-vscode",
+		"stylelint.vscode-stylelint"
 	],
 	"unwantedRecommendations": []
 }

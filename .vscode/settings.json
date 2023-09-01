@@ -1,7 +1,8 @@
 {
-	"editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+	"editor.codeActionsOnSave": { "source.fixAll.eslint": true, "source.fixAll.stylelint": true },
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.formatOnSave": true,
 	"eslint.rules.customizations": [{ "rule": "*", "severity": "warn" }],
-	"eslint.validate": ["javascript", "astro", "svelte", "typescript"]
+	"eslint.validate": ["javascript", "astro", "svelte", "typescript"],
+	"stylelint.validate": ["css", "html", "svelte", "astro"]
 }

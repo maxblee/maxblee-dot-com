@@ -1,4 +1,5 @@
 {
 	"*": "prettier . --write",
-	"*.{astro,ts,js,cjs,svelte,mjs}": "eslint . --write"
+	"*.{astro,ts,js,cjs,svelte,mjs}": "eslint . --fix",
+	"*.{astro,css,svelte}": "stylelint --fix"
 }

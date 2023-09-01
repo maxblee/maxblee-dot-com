@@ -1,0 +1,24 @@
+{
+	"extends": ["stylelint-config-standard", "stylelint-config-html"],
+	"rules": {
+		"at-rule-no-unknown": [
+			true,
+			{
+				"ignoreAtRules": ["tailwind", "apply", "variants"]
+			}
+		],
+		"declaration-property-unit-allowed-list": {
+			"font-size": ["rem", "%"],
+			"margin": ["rem", "em", "ch"],
+			"padding": ["rem", "em", "ch"]
+		},
+		"selector-pseudo-class-no-unknown": [
+			true,
+			{
+				"ignorePseudoClasses": ["global"]
+			}
+		]
+	},
+	"defaultSeverity": "error",
+	"customSyntax": "postcss-html"
+}
