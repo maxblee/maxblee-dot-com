@@ -23,7 +23,7 @@ module.exports = {
 					DEFAULT: '#F3CFAA',
 				},
 				Dkorange: {
-					DEFAULT: '#EF9943',
+					DEFAULT: '#F3CFAA',
 				},
 			},
 			fontFamily: {

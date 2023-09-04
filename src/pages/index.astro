@@ -12,6 +12,11 @@ interface LinkItem {
 	label: string;
 	description: string;
 }
+
+const pageMeta = {
+	description: 'Max Lee, Front-end engineer and data visualization developer, résumé site',
+};
+
 const linkItems: LinkItem[] = [
 	{
 		url: 'https://www.vpap.org/electionresults/20230620/senate/',
@@ -39,7 +44,7 @@ const linkItems: LinkItem[] = [
 ];
 ---
 
-<BaseTemplate title="Front-end and Data Visualization Developer">
+<BaseTemplate title="Front-end and Data Visualization Developer" meta={pageMeta}>
 	<div class="text-center">
 		<h1 class="text-4xl font-bold mlb-4">Hi, I'm Max Lee</h1>
 		<p class="text-2xl leading-relaxed mlb-2">
@@ -50,8 +55,8 @@ const linkItems: LinkItem[] = [
 			build one-off data visualizations that appear in our daily newsletter; and maintain some of
 			our front-end code.
 		</p>
-		<ul aria-labelledby="findme-links" class="flex items-center justify-center gap-8 mlb-6">
-			<h2 id="findme-links" class="sr-only">Find me:</h2>
+		<h2 id="findme-links" class="sr-only">Find me:</h2>
+		<ul class="flex items-center justify-center gap-8 mlb-6">
 			<li class="hidden dark:block">
 				<a href="https://github.com/maxblee/">
 					<Image src={GHDark} alt="GitHub" width="40" height="40" />
