@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		font-size: 100%;
+	}
+
+	@media screen(3xl) {
+		html {
+			font-size: 150%;
+		}
+	}
+}

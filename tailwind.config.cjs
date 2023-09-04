@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
@@ -24,7 +26,19 @@ module.exports = {
 					DEFAULT: '#EF9943',
 				},
 			},
+			fontFamily: {
+				sans: ['Montserrat Variable', ...defaultTheme.fontFamily.sans],
+			},
+			screens: {
+				xs: '30rem',
+				sm: '40rem',
+				md: '48rem',
+				lg: '64rem',
+				xl: '80rem',
+				'2xl': '96rem',
+				'3xl': '120rem',
+			},
 		},
 	},
-	plugins: [],
+	plugins: [require('tailwindcss-logical')],
 };

@@ -1,15 +1,18 @@
 ---
+import '@fontsource-variable/montserrat';
+import '@styles/base.css';
+
 const { title } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="en" class="">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Max Lee | {title}</title>
 	</head>
 	<body class="bg-orange-200 text-gray dark:bg-gray dark:text-Dkorange">
-		<slot />
+		<main id="main" class="max-w-4xl mlb-12 mli-auto"><slot /></main>
 	</body>
 </html>

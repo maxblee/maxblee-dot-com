@@ -7,5 +7,12 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-	integrations: [svelte(), tailwind(), mdx(), sitemap()],
+	integrations: [
+		svelte(),
+		tailwind({
+			applyBaseStyles: false,
+		}),
+		mdx(),
+		sitemap(),
+	],
 });
