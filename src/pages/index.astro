@@ -1,7 +1,98 @@
 ---
+import { Image } from 'astro:assets';
+
+import GHDark from '@assets/github-mark-white.svg';
+import GHLight from '@assets/github-mark.svg';
+import LinkedInLight from '@assets/In-Blue-40-Reg-Trademark.png';
+import LinkedInDark from '@assets/In-White-40-Reg-Trademark.png';
 import BaseTemplate from '@layouts/BaseTemplate.astro';
+
+interface LinkItem {
+	url: string;
+	label: string;
+	description: string;
+}
+const linkItems: LinkItem[] = [
+	{
+		url: 'https://www.vpap.org/electionresults/20230620/senate/',
+		label: 'Live Virginia Election Results',
+		description:
+			"I wrote the front-end Svelte code for VPAP's live-updating election results pages.",
+	},
+	{
+		url: 'https://www.vpap.org/demographics/',
+		label: 'Virginia Demographics',
+		description:
+			'A Census demographics page designed to help people understand the demographics of their locality',
+	},
+	{
+		url: 'https://www.vpap.org/redistricting/plan/us-house-of-representatives/',
+		label: 'Redistricting Pages',
+		description:
+			'I built a number of pages designed to help people understand the impact of redistricting in their region and across Virginia.',
+	},
+	{
+		url: 'https://www.vpap.org/visuals/visual/targeted-races/',
+		label: 'Targeted Races',
+		description: 'Profiles of featured elections',
+	},
+];
 ---
 
 <BaseTemplate title="Front-end and Data Visualization Developer">
-	<h1>Hello</h1>
+	<div class="text-center">
+		<h1 class="mlb-4 text-4xl font-bold">Hi, I'm Max Lee</h1>
+		<p class="mlb-2 text-2xl leading-relaxed">
+			I'm a front-end engineer and data visualization developer.
+		</p>
+		<p class="text-xl">
+			I currently work at the Virginia Public Access Project, where I develop web applications;
+			build one-off data visualizations that appear in our daily newsletter; and maintain some of
+			our front-end code.
+		</p>
+		<ul aria-labelledby="findme-links" class="mlb-6 flex items-center justify-center gap-8">
+			<h2 id="findme-links" class="sr-only">Find me:</h2>
+			<li class="hidden dark:block">
+				<a href="https://github.com/maxblee/">
+					<Image src={GHDark} alt="GitHub" width="40" height="40" />
+				</a>
+			</li>
+			<li class="dark:hidden">
+				<a href="https://github.com/maxblee">
+					<Image src={GHLight} alt="GitHub" width="40" height="40" />
+				</a>
+			</li>
+			<li class="hidden dark:block">
+				<a href="https://www.linkedin.com/in/max-b-lee/">
+					<Image src={LinkedInDark} alt="LinkedIn" width="40" height="40" />
+				</a>
+			</li>
+			<li class="dark:hidden">
+				<a href="https://www.linkedin.com/in/max-b-lee">
+					<Image src={LinkedInLight} alt="LinkedIn" width="40" height="40" />
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<h2 class="text-center text-2xl underline">View some of my work:</h2>
+		<ul class="list-em-dash mli-auto max-w-xl">
+			{
+				linkItems.map((workSample) => (
+					<li class="mlb-4 pis-2 text-lg">
+						<a class="underline" href={workSample.url}>
+							{workSample.label}:
+						</a>{' '}
+						{workSample.description}
+					</li>
+				))
+			}
+		</ul>
+	</div>
 </BaseTemplate>
+
+<style>
+	.list-em-dash {
+		list-style-type: '—';
+	}
+</style>
