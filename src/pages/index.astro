@@ -45,8 +45,8 @@ const linkItems: LinkItem[] = [
 
 <BaseTemplate title="Front-end and Data Visualization Developer" meta={pageMeta}>
 	<div class="text-center">
-		<h1 class="text-4xl font-bold mlb-4">Hi, I'm Max Lee</h1>
-		<p class="text-2xl leading-relaxed mlb-2">
+		<h1 class="mlb-4 text-4xl font-bold">Hi, I'm Max Lee</h1>
+		<p class="mlb-2 text-2xl leading-relaxed">
 			I'm a front-end engineer and data visualization developer.
 		</p>
 		<p class="text-xl">
@@ -55,7 +55,7 @@ const linkItems: LinkItem[] = [
 			front-end code.
 		</p>
 		<h2 id="findme-links" class="sr-only">Find me:</h2>
-		<ul class="flex items-center justify-center gap-8 mlb-6">
+		<ul class="mlb-6 flex items-center justify-center gap-8">
 			<li class="">
 				<a href="https://github.com/maxblee">
 					<GitHubLogo size={40} />
@@ -75,10 +75,10 @@ const linkItems: LinkItem[] = [
 	</div>
 	<div>
 		<h2 class="text-center text-2xl underline">View some of my work:</h2>
-		<ul class="list-em-dash max-w-xl px-2 mli-auto">
+		<ul class="list-em-dash mli-auto max-w-xl px-2">
 			{
 				linkItems.map((workSample) => (
-					<li class="text-lg mlb-4 pis-2">
+					<li class="mlb-4 pis-2 text-lg">
 						<a class="underline" href={workSample.url}>
 							{workSample.label}:
 						</a>{' '}
