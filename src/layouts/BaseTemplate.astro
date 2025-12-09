@@ -22,7 +22,7 @@ const { title, meta }: Props = Astro.props;
 		<meta name="description" content={meta.description} />
 		<title>Max Lee | {title}</title>
 	</head>
-	<body class="bg-orange-200 text-gray dark:bg-gray dark:text-Dkorange">
-		<main id="main" class="max-w-4xl px-4 mlb-12 mli-auto"><slot /></main>
+	<body class="text-gray dark:bg-gray dark:text-Dkorange bg-orange-200">
+		<main id="main" class="mx-auto my-12 max-w-4xl px-4"><slot /></main>
 	</body>
 </html>
