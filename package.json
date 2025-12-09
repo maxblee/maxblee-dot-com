@@ -20,7 +20,6 @@
 	"dependencies": {
 		"@astrojs/mdx": "^4.3.12",
 		"@astrojs/sitemap": "3.6.0",
-		"@astrojs/tailwind": "^6.0.2",
 		"@astropub/icons": "^0.2.0",
 		"@fontsource-variable/montserrat": "^5.0.9",
 		"astro": "^5.16.4",
@@ -28,6 +27,7 @@
 	},
 	"devDependencies": {
 		"@ianvs/prettier-plugin-sort-imports": "^4.1.0",
+		"@tailwindcss/vite": "^4.1.17",
 		"@typescript-eslint/eslint-plugin": "^6.5.0",
 		"@typescript-eslint/parser": "^6.5.0",
 		"eslint": "^8.48.0",
