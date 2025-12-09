@@ -3,7 +3,6 @@
 	"extends": [
 		"eslint:recommended",
 		"plugin:astro/recommended",
-		"plugin:svelte/recommended",
 		"plugin:tailwindcss/recommended",
 		"plugin:@typescript-eslint/recommended",
 		"prettier"
@@ -13,14 +12,6 @@
 		"tailwindcss/no-arbitrary-value": "error",
 		"tailwindcss/no-custom-classname": "off",
 		"tailwindcss/no-contradicting-classname": "error"
-	},
-	"settings": {
-		"svelte": {
-			"ignoreWarnings": [
-				"@typescript-eslint/no-unsafe-assignment",
-				"@typescript-eslint/no-unsafe-member-access"
-			]
-		}
 	},
 	"overrides": [
 		{
@@ -42,13 +33,6 @@
 			"parserOptions": {
 				"parser": "@typescript-eslint/parser",
 				"extraFileExtensions": [".astro"]
-			}
-		},
-		{
-			"files": ["*.svelte"],
-			"parser": "svelte-eslint-parser",
-			"parserOptions": {
-				"parser": "@typescript-eslint/parser"
 			}
 		}
 	]
