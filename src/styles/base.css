@@ -1,7 +1,5 @@
 @import 'tailwindcss';
 
-@plugin 'tailwindcss-logical';
-
 @theme {
 	--color-gray-100: #bbc0c3;
 	--color-gray-300: #8d949a;
