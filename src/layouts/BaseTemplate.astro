@@ -1,6 +1,6 @@
 ---
-import '@fontsource-variable/montserrat';
-import '@styles/base.css';
+import '@fontsource-variable/newsreader';
+import '@styles/base.scss';
 
 interface Meta {
 	description: string;
@@ -22,7 +22,9 @@ const { title, meta }: Props = Astro.props;
 		<meta name="description" content={meta.description} />
 		<title>Max Lee | {title}</title>
 	</head>
-	<body class="text-gray dark:bg-gray dark:text-Dkorange bg-orange-200">
-		<main id="main" class="mx-auto my-12 max-w-4xl px-4"><slot /></main>
+	<body>
+		<main id="main">
+			<slot />
+		</main>
 	</body>
 </html>

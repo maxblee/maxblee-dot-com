@@ -1,0 +1,52 @@
+@mixin heading {
+	text-align: center;
+	font-weight: normal;
+	margin: 2.5rem 0;
+	line-height: 1.25rem;
+	color: #8760a4;
+}
+
+h1 {
+	@include heading();
+	font-size: 2.5rem;
+}
+
+h2 {
+	@include heading();
+	font-size: 2rem;
+}
+
+h3 {
+	@include heading();
+	font-size: 1.75rem;
+}
+
+h4 {
+	@include heading();
+	font-size: 1.5rem;
+}
+
+h5 {
+	@include heading();
+	font-size: 1.25rem;
+}
+
+p {
+	font-size: 1.5rem;
+	font-weight: normal;
+	line-height: 1.5;
+	text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+	.article {
+		& h1,
+		& h2,
+		& h3,
+		& h4,
+		& h5,
+		& h6 {
+			color: #e3c2f9 !important;
+		}
+	}
+}

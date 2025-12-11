@@ -8,7 +8,7 @@ import tseslint from 'typescript-eslint';
 import eslint from '@eslint/js';
 
 const cfg = defineConfig([
-	globalIgnores(['dist/**/*']),
+	globalIgnores(['dist/**/*', '.astro/**/*']),
 	eslintConfigPrettier,
 	eslint.configs.recommended,
 	tseslint.configs.recommended,
