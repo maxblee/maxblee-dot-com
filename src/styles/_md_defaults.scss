@@ -1,9 +1,11 @@
+$highlight-color: #8760a4;
+
 @mixin heading {
 	text-align: center;
 	font-weight: normal;
 	margin: 2.5rem 0;
 	line-height: 1.25rem;
-	color: #8760a4;
+	color: $highlight-color;
 }
 
 h1 {
@@ -36,6 +38,17 @@ p {
 	font-weight: normal;
 	line-height: 1.5;
 	text-align: center;
+}
+
+a {
+	font-weight: 900;
+	text-decoration: none;
+	color: $highlight-color;
+}
+
+a:hover,
+a:focus {
+	text-decoration: underline;
 }
 
 @media (prefers-color-scheme: dark) {
