@@ -1,0 +1,33 @@
+---
+import { Image } from 'astro:assets';
+
+import GitHub from '@assets/github-mark.svg';
+import LinkedIn from '@assets/In-Blue-40-Reg-Trademark.png';
+---
+
+<ul class="icon-links" role="list">
+	<li>
+		<a href="https://www.github.com/maxblee">
+			<Image src={GitHub} alt="GitHub" width="40" height="40" />
+		</a>
+	</li>
+	<li>
+		<a href="https://www.linkedin.com/in/max-b-lee">
+			<Image src={LinkedIn} alt="LinkedIn" />
+		</a>
+	</li>
+</ul>
+
+<style>
+	.icon-links {
+		display: flex;
+		margin: 1rem auto;
+		justify-content: center;
+		align-items: center;
+		column-gap: 1rem;
+		row-gap: 0.25rem;
+		flex-wrap: wrap;
+		list-style-type: none;
+		padding: 0;
+	}
+</style>
