@@ -26,6 +26,10 @@
 		background-color: #eeeeec;
 	}
 
+	main {
+		padding: 0 0.5rem;
+	}
+
 	@media (width >= variables.$breakpoint-3xl) {
 		html {
 			font-size: 150%;
