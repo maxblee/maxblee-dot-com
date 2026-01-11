@@ -51,6 +51,15 @@ a:focus {
 	text-decoration: underline;
 }
 
+ul {
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+
+li::marker {
+	color: $highlight-color;
+}
+
 @media (prefers-color-scheme: dark) {
 	.article {
 		& h1,
